@@ -1,0 +1,27 @@
+Frontend  Engineer  Assignment   Goal:  Build  a  production-minded  product  analytics  dashboard  using  Next.js .  The  goal  is  to  evaluate:  ●  frontend  architecture  ●  product  thinking  ●  performance  ●  maintainability  ●  accessibility  ●  technical  decision-making    Task:  Create  an  analytics  dashboard  that  helps  product  managers  monitor  adoption,  engagement,  
+and
+ 
+feature
+ 
+usage
+ 
+across
+ 
+customers.
+ The  solution  should  allow  users  to:  1.  View  high-level  KPI  cards  2.  Filter  data  by  date  range,  region,  and  customer  segment  3.  Inspect  trends  in  charts  and  tables  4.  Drill  down  into  a  customer  detail  page  5.  Handle  loading,  empty,  and  error  states  properly  6.  Show  an  architecture  that  could  scale  in  a  real  product   Required  Stack  ●  Next.js  (latest  stable)  ●  TypeScript  ●  A  charting  library  of  your  choice  ●  Any  styling  approach  you  prefer  ●  Any  testing  library  you  prefer  You  may  use  mock  data,  local  JSON,  API  routes,  or  a  lightweight  fake  backend.   Functional  Requirements  1.  Dashboard  Page  Create  a  
+/dashboard
+ page  with  the  following:  KPI  Cards  Display  at  least:  ●  Monthly  Active  Users  
+ 
+●  Daily  Active  Users  ●  Retention  Rate  ●  Conversion  Rate  ●  Error  Rate  Filters  Support:  ●  date  range  ●  region  ●  customer  segment  ●  product  or  feature  selection  The  filters  should  update  the  dashboard  state  in  a  clean  and  scalable  way.  Visualizations  Include  at  least:  ●  1  line  chart  for  usage  trend  ●  1  bar  chart  for  feature  adoption  ●  1  table  for  top  customers  or  accounts  ●  1  breakdown  component  such  as  device,  browser,  or  platform  mix  2.  Customer  Detail  Page  Create  a  route  like  
+/customers/[id]
+ that  includes:  ●  customer  summary  ●  usage  trend  ●  top  used  features  ●  health  or  risk  indicators  ●  recent  activity  or  events  table  This  page  should  feel  like  a  natural  drill-down  from  the  main  dashboard.  3.  Data  Fetching  Strategy  Use  a  thoughtful  mix  of:  ●  server-side  rendering  ●  caching  or  revalidation  ●  client  interactivity  where  needed  Show  good  judgment  about  what  should  be  server-rendered  versus  client-rendered.  4.  State  Management  Demonstrate  how  you  would  handle:  ●  filter  state  ●  URL  synchronization  ●  local  UI  state  ●  async  states  Keep  it  practical.  Do  not  overengineer.  5.  Accessibility  
+Your  app  should  include:  ●  semantic  HTML  ●  keyboard  navigation  for  interactive  controls  ●  accessible  labels  ●  acceptable  color  contrast  ●  readable  loading  and  empty  states  6.  Performance  Show  deliberate  attention  to:  ●  bundle  size  ●  unnecessary  rerenders  ●  chart  and  component  loading  strategy  ●  route-level  architecture  ●  caching  strategy  ●  efficient  asset  loading  where  relevant  Extreme  optimization  is  not  required,  but  the  choices  should  be  defensible.   Engineering  Expectations  Include  a  short  document  called  
+DECISIONS.md
+ covering:  1.  Architecture  choices  Why  this  state  management  approach?  Why  this  folder  structure?  2.  Tradeoffs  What  did  you  simplify?  What  would  you  change  in  a  production  system?  3.  Scalability  How  would  this  grow  if  the  dashboard  had  many  more  widgets?  How  would  you  support  multiple  teams  contributing  to  the  frontend?  4.  Quality  Testing  approach  Monitoring  and  error  tracking  approach  Accessibility  approach  5.  Collaboration  How  would  you  guide  engineers  working  in  this  codebase?  What  standards  or  conventions  would  you  introduce?  Nice  to  Have  Optional  additions  that  are  good  signals:  ●  URL-persisted  filters  ●  responsive  layout  
+ 
+●  dark  mode  ●  optimistic  UI  where  appropriate  ●  feature  flag  simulation  ●  analytics  event  tracking  abstraction  ●  error  boundary  usage  ●  skeleton  loading  states  ●  Storybook  or  component  documentation  ●  simple  design  system  primitives   Deliverables  Please  submit:  1.  Source  code  2.  
+README.md
+ with:  setup  instructions  assumptions  architecture  summary  3.  
+DECISIONS.md
+ 
+4.  Tests   Suggested  Timebox  Preferred  take-home  target:  4  hours  ●  A  shorter  2-3  hour  version  is  also  acceptable  with  reduced  polish  expectations   

@@ -1,0 +1,25 @@
+---
+description: LLM/project docs live in docs/; consult for architecture and conventions
+alwaysApply: true
+---
+
+# Project documentation for Cursor
+
+Canonical documentation for this codebase is under **`docs/`** (workspace-relative). It is part of the repo and should stay readable to the AI—do not move it outside the workspace or add ignore rules that exclude it without replacing this guidance.
+
+When planning or implementing non-trivial changes, read the relevant files:
+
+| File | Purpose |
+|------|---------|
+| `docs/README.md` | Setup, scripts, architecture overview |
+| `docs/AGENTS.md` | Agent notes and Next.js guidance |
+| `docs/CLAUDE.md` | Pointers to agent docs |
+| `docs/DECISIONS.md` | Architectural decisions |
+| `docs/CONTRIBUTING.md` | Contribution workflow |
+| `docs/implementation-plan.md` | Planned work |
+| `docs/folder-structure.md` | Layout conventions |
+| `docs/requirements-analysis.md` | Requirements analysis |
+| `docs/requirements-gap-analysis.md` | Gaps vs requirements |
+| `docs/frontend-assignment.txt` | Assignment brief |
+
+Use normal file reads when you need detail; prefer these sources over guessing project conventions.
