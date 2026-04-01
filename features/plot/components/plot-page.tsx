@@ -6,6 +6,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "@/features/shared/components/ui/tabs";
+import { ThemeToggle } from "@/features/shared/components/theme-toggle";
 
 import { ClassicBarChart } from "./bar-charts/classic-bar-chart";
 import { HorizontalBarChart } from "./bar-charts/horizontal-bar-chart";
@@ -45,11 +46,16 @@ export function PlotPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        <header className="mb-8">
-          <h1 className="text-2xl font-bold tracking-tight">Plot Gallery</h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Interactive chart types with editable mock data. Switch between sliders, number inputs, and table editing below each chart.
-          </p>
+        <header className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Plot Gallery</h1>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Interactive chart types with editable mock data. Switch between sliders, number inputs, and table editing below each chart.
+            </p>
+          </div>
+          <div className="flex shrink-0 items-start justify-end sm:pt-0">
+            <ThemeToggle />
+          </div>
         </header>
 
         <Tabs defaultValue="bar">
