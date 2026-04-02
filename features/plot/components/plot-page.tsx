@@ -33,6 +33,12 @@ import { ContourPlot } from "./contour-plot/contour-plot";
 import { HeatMap } from "./heat-maps/heat-map";
 import { SpatialHeatMap } from "./heat-maps/spatial-heat-map";
 
+import { MoleculeViewer } from "./3d-charts/molecule-viewer";
+import { SurfacePlot3D } from "./3d-charts/surface-plot-3d";
+import { Scatter3D } from "./3d-charts/scatter-3d";
+import { ParametricCurve3D } from "./3d-charts/parametric-curve-3d";
+import { IsometricBarChart } from "./3d-charts/isometric-bar-chart";
+
 const categories = [
   { value: "bar", label: "Bar Charts" },
   { value: "box", label: "Box Plots" },
@@ -40,6 +46,7 @@ const categories = [
   { value: "line", label: "Line Charts" },
   { value: "contour", label: "Contour" },
   { value: "heatmap", label: "Heat Maps" },
+  { value: "3d",      label: "3D Charts" },
 ] as const;
 
 export function PlotPage() {
@@ -102,6 +109,14 @@ export function PlotPage() {
           <TabsContent value="heatmap" className="space-y-6">
             <HeatMap />
             <SpatialHeatMap />
+          </TabsContent>
+
+          <TabsContent value="3d" className="space-y-6">
+            <MoleculeViewer />
+            <SurfacePlot3D />
+            <Scatter3D />
+            <ParametricCurve3D />
+            <IsometricBarChart />
           </TabsContent>
         </Tabs>
       </div>
